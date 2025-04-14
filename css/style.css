@@ -9,6 +9,13 @@
 
 
 }
+* { 
+    font-family: "Roboto", sans-serif;
+}
+
+body { 
+    overflow-x: hidden;
+}
 
 body { 
     margin: 0;
@@ -36,6 +43,8 @@ body {
     justify-self: end;
 }
 
+
+
 .hamburger {
     display: flex;
     flex-direction: column;
@@ -47,6 +56,7 @@ body {
     border-radius: 10px;
     background-color: var(--primary-color-text);
     margin: 12px;
+    justify-self: end;
 
  }
 
@@ -59,7 +69,69 @@ body {
     margin: 8px;
   }
 
- .logo-span { 
+
+.menu-panel { 
+    position: absolute;
+    right: -309px;
+    top: 0;
+    width: 309px;
+    height: 568px;
+    background-color: var(--primary-color-text);
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 32px;
+    box-sizing: border-box;
+    transition: right 1s ease-in-out;
+
+}
+
+.menu-panel ul { 
+    list-style: none;
+    padding: 0;
+}
+
+.menu-panel ul li { 
+    margin-bottom: 32px;
+
+}
+
+.menu-panel ul li a { 
+    text-decoration: none;
+    color: var(--primary-color-buttons);
+}
+
+.menu-panel.active { 
+    right: 0;
+}
+
+.frame {
+    width: 100%;
+    text-align: center;
+}
+
+.frame img {
+    display: inline-block;
+    width: 296px;
+    height: 165px;
+    object-fit: cover;
+    margin: 22px;
+}
+
+.frame {
+    width: 100%;
+    text-align: center;
+}
+
+.frame img {
+    display: inline-block;
+    width: 296px;
+    height: 165px;
+    object-fit: cover;
+    margin: 22px;
+}
+
+.logo-span { 
     display: inline-block;
     margin: 25px;
     font-family: "Russo One", sans-serif;
@@ -246,10 +318,22 @@ hr {
     }
 
     .menu-list ul li {
+        
 
         display: inline-block;
         margin-right: 8px;
     }
+    .menu-list ul li a {
+        display: inline-block;
+        text-decoration: none;
+        color: var(--primary-color-text-dark);
+        font-weight: 700;
+        font-size: 24px;
+        transition: transform 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+    }
+
+
+
 
     .profile  {
         display: grid;
@@ -500,10 +584,7 @@ hr {
         
     }
 
-    .profile-details {
-        
 
-    }
 
     .profile-details span  {
         display: block;
