@@ -2,7 +2,7 @@ const btnHamburger = document.querySelector('.hamburger'); // Määrame muutujal
 const menuPanel = document.querySelector('.menu-panel'); // Määrame muutujale menuPanel HTML-element, mille klass on menu-panel
 const menuLinks = document.querySelectorAll('.menu-panel a'); // Määrame muutujale menuLinks kõik HTML-sildid, mis asuvad menüü paneeli sees
 const frameImage = document.querySelector('#frame'); // Valime HTML elemendi, millel on id 'frame'
-const images = ['1pilt', '2pilt', '3pilt','4pilt', '5pilt', '6pilt']; // Piltide nimede massiiv
+const images = ['1pilt.jpg', '2pilt.jpg', '3pilt.jpg','4pilt.jpg', '5pilt.jpg', '6pilt.jpg']; // Piltide nimede massiiv
 
 let currentImageIndex = 0; // Hoiab praegu valitud pildi indeksit, alustades esimesest (indeks 0)
 
